@@ -2,7 +2,6 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router';
 
-
 // import countriesArr from '../countries.json';
 
 function CountryDetails() {
@@ -21,10 +20,10 @@ function CountryDetails() {
   }, [id]);
 
   return (
-    <div className="col-7">
+    <div className="col-6">
       {country && (
         <>
-          <div class="col-7">
+          <div class="col-6">
             <h1>{country.name.common}</h1>
             <table class="table">
               <thead></thead>
